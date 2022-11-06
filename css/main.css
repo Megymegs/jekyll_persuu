@@ -1,0 +1,334 @@
+@font-face {
+  font-family: Youth;
+  src: url("fonts/YouthTouchDemoRegular-4VwY.ttf"); }
+@font-face {
+  font-family: Montserrat-Black;
+  src: url("fonts/Montserrat-Black.ttf"); }
+@font-face {
+  font-family: Montserrat-BlackItalic;
+  src: url("fonts/Montserrat-BlackItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("fonts/Montserrat-Bold.ttf"); }
+@font-face {
+  font-family: Montserrat-BoldItalic;
+  src: url("fonts/Montserrat-BoldItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url("fonts/Montserrat-ExtraBold.ttf"); }
+@font-face {
+  font-family: Montserrat-ExtraBoldItalic;
+  src: url("fonts/Montserrat-ExtraBoldItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-ExtraLight;
+  src: url("fonts/Montserrat-ExtraLight.ttf"); }
+@font-face {
+  font-family: Montserrat-ExtraLightItalic;
+  src: url("fonts/Montserrat-ExtraLightItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-Italic;
+  src: url("fonts/Montserrat-Italic.ttf"); }
+@font-face {
+  font-family: Montserrat-Light;
+  src: url("fonts/Montserrat-Light.ttf"); }
+@font-face {
+  font-family: Montserrat-LightItalic;
+  src: url("fonts/Montserrat-LightItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url("fonts/Montserrat-Medium.ttf"); }
+@font-face {
+  font-family: Montserrat-MediumItalic;
+  src: url("fonts/Montserrat-MediumItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("fonts/Montserrat-Regular.ttf"); }
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url("fonts/Montserrat-SemiBold.ttf"); }
+@font-face {
+  font-family: Montserrat-SemiBoldItalic;
+  src: url("fonts/Montserrat-SemiBoldItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url("fonts/Montserrat-Thin.ttf"); }
+@font-face {
+  font-family: Montserrat-ThinItalic;
+  src: url("fonts/Montserrat-ThinItalic.ttf"); }
+.previews .col-9 .col-sm {
+  cursor: pointer; }
+  .previews .col-9 .col-sm .swatches {
+    list-style-type: none;
+    padding-left: 0;
+    justify-content: space-evenly; }
+    .previews .col-9 .col-sm .swatches li {
+      display: block;
+      width: 20px;
+      height: 20px;
+      box-shadow: 0 0 3px 0px #bfbfbf; }
+      .previews .col-9 .col-sm .swatches li.palette_1_1 {
+        background-color: #A1EAFB; }
+      .previews .col-9 .col-sm .swatches li.palette_1_2 {
+        background-color: #FDFDFD; }
+      .previews .col-9 .col-sm .swatches li.palette_1_3 {
+        background-color: #FFCEF3; }
+      .previews .col-9 .col-sm .swatches li.palette_1_4 {
+        background-color: #CABBE9; }
+      .previews .col-9 .col-sm .swatches li.palette_2_1 {
+        background-color: #D77FA1; }
+      .previews .col-9 .col-sm .swatches li.palette_2_2 {
+        background-color: #BAABDA; }
+      .previews .col-9 .col-sm .swatches li.palette_2_3 {
+        background-color: #D6E5FA; }
+      .previews .col-9 .col-sm .swatches li.palette_2_4 {
+        background-color: #FFF9F9; }
+      .previews .col-9 .col-sm .swatches li.palette_3_1 {
+        background-color: #F07DEA; }
+      .previews .col-9 .col-sm .swatches li.palette_3_2 {
+        background-color: #A460ED; }
+      .previews .col-9 .col-sm .swatches li.palette_3_3 {
+        background-color: #9FC9F3; }
+      .previews .col-9 .col-sm .swatches li.palette_3_4 {
+        background-color: #EEEEEE; }
+      .previews .col-9 .col-sm .swatches li.palette_4_1 {
+        background-color: #A8D8EA; }
+      .previews .col-9 .col-sm .swatches li.palette_4_2 {
+        background-color: #AA96DA; }
+      .previews .col-9 .col-sm .swatches li.palette_4_3 {
+        background-color: #FCBAD3; }
+      .previews .col-9 .col-sm .swatches li.palette_4_4 {
+        background-color: #FFFFD2; }
+      .previews .col-9 .col-sm .swatches li.palette_5_1 {
+        background-color: #6D0C74; }
+      .previews .col-9 .col-sm .swatches li.palette_5_2 {
+        background-color: #7F78D2; }
+      .previews .col-9 .col-sm .swatches li.palette_5_3 {
+        background-color: #D2D0FE; }
+      .previews .col-9 .col-sm .swatches li.palette_5_4 {
+        background-color: #FDECFF; }
+      .previews .col-9 .col-sm .swatches li.palette_6_1 {
+        background-color: #C8A2C8; }
+      .previews .col-9 .col-sm .swatches li.palette_6_2 {
+        background-color: #fff; }
+.previews .col-3 .col-sm {
+  cursor: pointer; }
+  .previews .col-3 .col-sm .swatches {
+    list-style-type: none;
+    padding-left: 0;
+    justify-content: space-between; }
+    .previews .col-3 .col-sm .swatches li {
+      display: block;
+      width: 20px;
+      height: 20px;
+      box-shadow: 0 0 3px 0px #bfbfbf; }
+      .previews .col-3 .col-sm .swatches li#linear {
+        background-image: linear-gradient(red, yellow, green); }
+      .previews .col-3 .col-sm .swatches li#conic {
+        background-image: conic-gradient(from 90deg, red, yellow, green);
+        border-radius: 50%; }
+
+#homepage-main .brand_ID {
+  justify-content: center;
+  align-items: center; }
+  #homepage-main .brand_ID .persuu {
+    width: 55px;
+    margin-right: 10px; }
+    #homepage-main .brand_ID .persuu .icon {
+      position: relative;
+      font-family: "Font Awesome 6 Free";
+      line-height: 40px;
+      display: flex;
+      align-items: center; }
+      #homepage-main .brand_ID .persuu .icon svg.fa-heart {
+        color: #fff;
+        font-size: 28px;
+        margin-left: 7px;
+        z-index: 2; }
+      #homepage-main .brand_ID .persuu .icon svg.fa-caret-left {
+        font-size: 42px;
+        color: #000;
+        position: absolute;
+        right: -2.5px; }
+      #homepage-main .brand_ID .persuu .icon::before {
+        content: "";
+        width: 42px;
+        height: 40px;
+        background-color: #000;
+        border-radius: 10px;
+        position: absolute;
+        z-index: 0; }
+  #homepage-main .brand_ID span {
+    font-weight: 700;
+    font-size: 21px; }
+#homepage-main .member_type .text-content h4 {
+  font-size: calc(1.07rem + 0.3vw); }
+#homepage-main.palette_1 {
+  color: #212121;
+  text-shadow: 0 0 2.5px #FDFDFD;
+  background-image: linear-gradient(to bottom right, #a1eafb, #FFCEF3, #CABBE9, #FFCEF3, #a1eafb); }
+  #homepage-main.palette_1.linear {
+    background-image: linear-gradient(to bottom right, #a1eafb, #FFCEF3, #CABBE9, #FFCEF3, #a1eafb); }
+    #homepage-main.palette_1.linear .persuu .icon svg.fa-caret-left {
+      color: #cabbe9; }
+    #homepage-main.palette_1.linear .persuu .icon::before {
+      background-color: #cabbe9; }
+    #homepage-main.palette_1.linear span {
+      color: #fdfdfd;
+      text-shadow: 0 0 2.5px #cabbe9; }
+  #homepage-main.palette_1.conic {
+    background-image: conic-gradient(#CABBE9 5deg, #FFCEF3 90deg, #CABBE9 180deg, #a1eafb 270deg, #CABBE9 355deg); }
+    #homepage-main.palette_1.conic .persuu .icon svg.fa-caret-left {
+      color: #ffcef3; }
+    #homepage-main.palette_1.conic .persuu .icon::before {
+      background-color: #ffcef3; }
+    #homepage-main.palette_1.conic span {
+      color: #fdfdfd;
+      text-shadow: 0 0 2.5px #ffcef3; }
+  #homepage-main.palette_1 .persuu .icon svg.fa-caret-left {
+    color: #cabbe9; }
+  #homepage-main.palette_1 .persuu .icon::before {
+    background-color: #cabbe9; }
+  #homepage-main.palette_1 span {
+    color: #fdfdfd;
+    text-shadow: 0 0 2.5px #cabbe9; }
+#homepage-main.palette_2 {
+  color: #212121;
+  text-shadow: 0 0 2.5px #FFF9F9;
+  background-image: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1); }
+  #homepage-main.palette_2.linear {
+    background-image: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1); }
+    #homepage-main.palette_2.linear .persuu .icon svg.fa-caret-left {
+      color: #D77FA1; }
+    #homepage-main.palette_2.linear .persuu .icon::before {
+      background-color: #D77FA1; }
+    #homepage-main.palette_2.linear span {
+      color: #FFF9F9;
+      text-shadow: 0 0 2.5px #D77FA1; }
+  #homepage-main.palette_2.conic {
+    background-image: conic-gradient(#D6E5FA 5deg, #BAABDA 90deg, #D6E5FA 180deg, #D77FA1 270deg, #D6E5FA 355deg); }
+    #homepage-main.palette_2.conic .persuu .icon svg.fa-caret-left {
+      color: #baabda; }
+    #homepage-main.palette_2.conic .persuu .icon::before {
+      background-color: #baabda; }
+    #homepage-main.palette_2.conic span {
+      color: #FFF9F9;
+      text-shadow: 0 0 2.5px #baabda; }
+  #homepage-main.palette_2 .persuu .icon svg.fa-caret-left {
+    color: #D77FA1; }
+  #homepage-main.palette_2 .persuu .icon::before {
+    background-color: #D77FA1; }
+  #homepage-main.palette_2 span {
+    color: #fdfdfd;
+    text-shadow: 0 0 2.5px #D77FA1; }
+#homepage-main.palette_3 {
+  color: #212121;
+  text-shadow: 0 0 2.5px #EEEEEE;
+  background-image: linear-gradient(to bottom right, #A460ED, #F07DEA, #D6E5FA, #F07DEA, #A460ED); }
+  #homepage-main.palette_3.linear {
+    background-image: linear-gradient(to bottom right, #A460ED, #F07DEA, #D6E5FA, #F07DEA, #A460ED); }
+    #homepage-main.palette_3.linear .persuu .icon svg.fa-caret-left {
+      color: #9fc9f3; }
+    #homepage-main.palette_3.linear .persuu .icon::before {
+      background-color: #9fc9f3; }
+    #homepage-main.palette_3.linear span {
+      color: #EEEEEE;
+      text-shadow: 0 0 2.5px #9fc9f3; }
+  #homepage-main.palette_3.conic {
+    background-image: conic-gradient(#D6E5FA 5deg, #F07DEA 90deg, #D6E5FA 180deg, #A460ED 270deg, #D6E5FA 355deg); }
+    #homepage-main.palette_3.conic .persuu .icon svg.fa-caret-left {
+      color: #f07dea; }
+    #homepage-main.palette_3.conic .persuu .icon::before {
+      background-color: #f07dea; }
+    #homepage-main.palette_3.conic span {
+      color: #EEEEEE;
+      text-shadow: 0 0 2.5px #f07dea; }
+  #homepage-main.palette_3 .persuu .icon svg.fa-caret-left {
+    color: #9fc9f3; }
+  #homepage-main.palette_3 .persuu .icon::before {
+    background-color: #9fc9f3; }
+  #homepage-main.palette_3 span {
+    color: #fdfdfd;
+    text-shadow: 0 0 2.5px #9fc9f3; }
+#homepage-main.palette_4 {
+  color: #212121;
+  text-shadow: 0 0 2.5px #FFFFD2;
+  background-image: linear-gradient(to bottom right, #A8D8EA, #AA96DA, #FCBAD3, #AA96DA, #A8D8EA); }
+  #homepage-main.palette_4.linear {
+    background-image: linear-gradient(to bottom right, #A8D8EA, #AA96DA, #FCBAD3, #AA96DA, #A8D8EA); }
+    #homepage-main.palette_4.linear .persuu .icon svg.fa-caret-left {
+      color: #fcbad3; }
+    #homepage-main.palette_4.linear .persuu .icon::before {
+      background-color: #fcbad3; }
+    #homepage-main.palette_4.linear span {
+      color: #FFFFD2;
+      text-shadow: 0 0 2.5px #fcbad3; }
+  #homepage-main.palette_4.conic {
+    background-image: conic-gradient(#FCBAD3 5deg, #AA96DA 90deg, #FCBAD3 180deg, #A8D8EA 270deg, #FCBAD3 355deg); }
+    #homepage-main.palette_4.conic .persuu .icon svg.fa-caret-left {
+      color: #aa96da; }
+    #homepage-main.palette_4.conic .persuu .icon::before {
+      background-color: #aa96da; }
+    #homepage-main.palette_4.conic span {
+      color: #FFFFD2;
+      text-shadow: 0 0 2.5px #aa96da; }
+  #homepage-main.palette_4 .persuu .icon svg.fa-caret-left {
+    color: #fcbad3; }
+  #homepage-main.palette_4 .persuu .icon::before {
+    background-color: #fcbad3; }
+  #homepage-main.palette_4 span {
+    color: #fdfdfd;
+    text-shadow: 0 0 2.5px #fcbad3; }
+#homepage-main.palette_5 {
+  color: #212121;
+  text-shadow: 0 0 2.5px #FDECFF;
+  background-image: linear-gradient(to bottom right, #6D0C74, #7F78D2, #D2D0FE, #7F78D2, #6D0C74); }
+  #homepage-main.palette_5.linear {
+    background-image: linear-gradient(to bottom right, #6D0C74, #7F78D2, #D2D0FE, #7F78D2, #6D0C74); }
+    #homepage-main.palette_5.linear .persuu .icon svg.fa-caret-left {
+      color: #6d0c74; }
+    #homepage-main.palette_5.linear .persuu .icon::before {
+      background-color: #6d0c74; }
+    #homepage-main.palette_5.linear span {
+      color: #FFFFD2;
+      text-shadow: 0 0 2.5px #6d0c74; }
+  #homepage-main.palette_5.conic {
+    background-image: conic-gradient(#D2D0FE 5deg, #7F78D2 90deg, #D2D0FE 180deg, #6d0c74 270deg, #D2D0FE 355deg); }
+    #homepage-main.palette_5.conic .persuu .icon svg.fa-caret-left {
+      color: #7f78d2; }
+    #homepage-main.palette_5.conic .persuu .icon::before {
+      background-color: #7f78d2; }
+    #homepage-main.palette_5.conic span {
+      color: #FFFFD2;
+      text-shadow: 0 0 2.5px #7f78d2; }
+  #homepage-main.palette_5 .persuu .icon svg.fa-caret-left {
+    color: #6d0c74; }
+  #homepage-main.palette_5 .persuu .icon::before {
+    background-color: #6d0c74; }
+  #homepage-main.palette_5 span {
+    color: #fdfdfd;
+    text-shadow: 0 0 2.5px #6d0c74; }
+#homepage-main.palette_6 {
+  color: #000;
+  text-shadow: 0 0 2.5px #e6d7ff;
+  background-image: linear-gradient(to bottom right, #d2afff, #e6d7ff, #C8A2C8, #e6d7ff, #d2afff); }
+  #homepage-main.palette_6.linear {
+    background-image: linear-gradient(to bottom right, #d2afff, #e6d7ff, #C8A2C8, #e6d7ff, #d2afff); }
+  #homepage-main.palette_6.conic {
+    background-image: conic-gradient(#e6d7ff 5deg, #C8A2C8 90deg, #e6d7ff 180deg, #C8A2C8 270deg, #e6d7ff 355deg); }
+  #homepage-main.palette_6 .persuu .icon svg.fa-caret-left {
+    color: #c8a2c8; }
+  #homepage-main.palette_6 .persuu .icon::before {
+    background-color: #c8a2c8; }
+  #homepage-main.palette_6 span {
+    color: #fdfdfd;
+    text-shadow: 0 0 2.5px #c8a2c8; }
+
+@media (min-width: 425px) {
+  .previews .col-3 .col-sm .swatches {
+    justify-content: center; }
+    .previews .col-3 .col-sm .swatches li#conic {
+      margin: 0 0 0 20px; }
+    .previews .col-3 .col-sm .swatches li#conic {
+      margin: 0 20px 0 0; } }
+
+/*# sourceMappingURL=main.css.map */
