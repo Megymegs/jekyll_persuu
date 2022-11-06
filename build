@@ -1,0 +1,208 @@
+@font-face {
+  font-family: Youth;
+  src: url("fonts/YouthTouchDemoRegular-4VwY.ttf"); }
+@font-face {
+  font-family: Montserrat-Black;
+  src: url("fonts/Montserrat-Black.ttf"); }
+@font-face {
+  font-family: Montserrat-BlackItalic;
+  src: url("fonts/Montserrat-BlackItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("fonts/Montserrat-Bold.ttf"); }
+@font-face {
+  font-family: Montserrat-BoldItalic;
+  src: url("fonts/Montserrat-BoldItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-ExtraBold;
+  src: url("fonts/Montserrat-ExtraBold.ttf"); }
+@font-face {
+  font-family: Montserrat-ExtraBoldItalic;
+  src: url("fonts/Montserrat-ExtraBoldItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-ExtraLight;
+  src: url("fonts/Montserrat-ExtraLight.ttf"); }
+@font-face {
+  font-family: Montserrat-ExtraLightItalic;
+  src: url("fonts/Montserrat-ExtraLightItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-Italic;
+  src: url("fonts/Montserrat-Italic.ttf"); }
+@font-face {
+  font-family: Montserrat-Light;
+  src: url("fonts/Montserrat-Light.ttf"); }
+@font-face {
+  font-family: Montserrat-LightItalic;
+  src: url("fonts/Montserrat-LightItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-Medium;
+  src: url("fonts/Montserrat-Medium.ttf"); }
+@font-face {
+  font-family: Montserrat-MediumItalic;
+  src: url("fonts/Montserrat-MediumItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-Regular;
+  src: url("fonts/Montserrat-Regular.ttf"); }
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url("fonts/Montserrat-SemiBold.ttf"); }
+@font-face {
+  font-family: Montserrat-SemiBoldItalic;
+  src: url("fonts/Montserrat-SemiBoldItalic.ttf"); }
+@font-face {
+  font-family: Montserrat-Thin;
+  src: url("fonts/Montserrat-Thin.ttf"); }
+@font-face {
+  font-family: Montserrat-ThinItalic;
+  src: url("fonts/Montserrat-ThinItalic.ttf"); }
+.navbar {
+  border-top: 1em solid rgba(141, 139, 139, 0.12);
+  border-bottom: 1em solid rgba(141, 139, 139, 0.12);
+  border-left: 0.8em solid rgba(141, 139, 139, 0.12);
+  border-right: 0.8em solid rgba(141, 139, 139, 0.12);
+  background: #FFF;
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: 0; }
+
+#navbarNav .navbar-nav {
+  justify-content: space-evenly; }
+
+.navbar .navbar-toggler:before {
+  content: "\f0c9";
+  font-family: 'fontawesome'; }
+
+.navbar .navbar-brand {
+  margin-right: 0; }
+
+#navbarNav .navbar-nav a {
+  color: #8E8B8B;
+  font-family: 'Montserrat-Medium';
+  font-size: 0.85em; }
+
+.navbar-toggler {
+  position: relative; }
+
+.navbar .navbar-toggler:before {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%); }
+
+footer {
+  border-top: 1em solid rgba(141, 139, 139, 0.12);
+  border-bottom: 1em solid rgba(141, 139, 139, 0.12);
+  border-left: 0.8em solid rgba(141, 139, 139, 0.12);
+  border-right: 0.8em solid rgba(141, 139, 139, 0.12);
+  background: #FFF;
+  display: flex;
+  flex-wrap: wrap; }
+
+footer .social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2em; }
+
+footer .social h4 {
+  font-family: 'Youth';
+  width: 100%;
+  color: #8E8B8B;
+  font-size: 2.2em; }
+
+footer .social .fb, footer .social .ig, footer .social .gm {
+  font-family: 'Youth';
+  width: 100%;
+  color: #8E8B8B;
+  padding: 0.5em;
+  font-size: 1.2em; }
+
+footer .social .fb:before {
+  content: "";
+  background-image: url("images/icons-desktop/facebook-handle.png");
+  padding: 0.6em 1.2em;
+  background-size: 70%;
+  background-position: left center;
+  background-repeat: no-repeat; }
+
+footer .social .ig:before {
+  content: "";
+  background-image: url("images/icons-desktop/insta-handle.png");
+  padding: 0.5em 1.2em;
+  background-size: 70%;
+  background-position: left center;
+  background-repeat: no-repeat; }
+
+footer .social .gm:before {
+  content: "";
+  background-image: url("images/icons-desktop/gmail-handle.png");
+  padding: 0.5em 1.2em;
+  background-size: 70%;
+  background-position: left center;
+  background-repeat: no-repeat; }
+
+footer .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 2em;
+  text-align: center; }
+
+footer .services h4 {
+  font-family: 'Montserrat-Medium';
+  color: #8E8B8B;
+  font-size: 1.2em;
+  text-align: center;
+  text-decoration: underline; }
+
+footer .services span {
+  font-size: 0.8em;
+  color: #FE8D9E;
+  width: 100%;
+  display: block; }
+
+footer .copywrites {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8em; }
+
+footer .copywrites p {
+  color: #8E8B8B;
+  font-family: 'Montserrat-Medium';
+  font-size: 80%; }
+
+footer .copywrites p a, footer .copywrites p a:visited, footer .copywrites p a:hover {
+  color: #8E8B8B;
+  font-family: 'Montserrat-Medium';
+  font-size: 1em; }
+
+footer .copywrites p:nth-child(2) {
+  text-align: center; }
+
+footer .copywrites p:nth-child(3) {
+  text-align: right; }
+
+@media (max-width: 991px) {
+  footer .social {
+    padding: 2em 1em; }
+
+  footer .social .fb, footer .social .ig, footer .social .gm {
+    width: auto; }
+
+  footer .social h4, footer .copywrites p {
+    text-align: center !important; }
+
+  footer .copywrites .Myra {
+    order: 1;
+    font-weight: 600; }
+
+  footer .copywrites .Kayla {
+    order: 2; }
+
+  footer .copywrites .Megan {
+    order: 3; } }
+@media (max-width: 500px) {
+  footer .social .fb, footer .social .ig, footer .social .gm {
+    width: 100%;
+    text-align: center; } }
+
+/*# sourceMappingURL=build.map */

@@ -1,0 +1,4 @@
+name: Persuu
+markdown: redcarpet
+highlighter: pygments # or rouge or null
+exclude: ["node_modules", "gulpfile.js", "package.json", "README.md", "package-lock.json"]
