@@ -1,0 +1,39 @@
+.navbar {
+    border-top: 1em solid $border-color;
+    border-bottom: 1em solid $border-color;
+    border-left: 0.8em solid $border-color;
+    border-right: 0.8em solid $border-color;
+    background: $color-two;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0;
+}
+
+#navbarNav .navbar-nav {
+    justify-content: space-evenly;
+}
+
+.navbar .navbar-toggler:before {
+    content: "\f0c9";
+    font-family: 'fontawesome';
+}
+
+.navbar .navbar-brand {
+    margin-right: 0;
+}
+
+#navbarNav .navbar-nav a {
+    color: $color-one;
+    font-family: 'Montserrat-Medium';
+    font-size: 0.85em;
+}
+
+.navbar-toggler {
+    position: relative;
+}
+
+.navbar .navbar-toggler:before {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
