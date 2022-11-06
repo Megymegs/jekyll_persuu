@@ -1,6 +1,5 @@
 name: Persuu
 markdown: redcarpet
-baseurl: "/index"
 url: "https://megymegs.github.io/jekyll_persuu"
 highlighter: pygments # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json", "README.md", "package-lock.json"]
