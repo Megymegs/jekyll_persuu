@@ -1,0 +1,133 @@
+footer {
+    border-top: 1em solid $border-color;
+    border-bottom: 1em solid $border-color;
+    border-left: 0.8em solid $border-color;
+    border-right: 0.8em solid $border-color;
+    background: $color-two;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2em;
+}
+
+footer .social h4 {
+    font-family: 'Youth';
+    width: 100%;
+    color: $color-one;
+    font-size: 2.2em;
+}
+
+footer .social .fb, footer .social .ig, footer .social .gm {
+    font-family: 'Youth';
+    width: 100%;
+    color: $color-one;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+
+footer .social .fb:before {
+    content: "";
+    background-image: url("images/icons-desktop/facebook-handle.png");    padding: 0.6em 1.2em;
+    background-size: 70%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+footer .social .ig:before {
+    content: "";
+    background-image: url("images/icons-desktop/insta-handle.png");    padding: 0.5em 1.2em;
+    background-size: 70%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+footer .social .gm:before {
+    content: "";
+    background-image: url("images/icons-desktop/gmail-handle.png");    padding: 0.5em 1.2em;
+    background-size: 70%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+footer .services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 2em;
+    text-align: center;
+}
+
+footer .services h4 {
+    font-family: 'Montserrat-Medium';
+    color: $color-one;
+    font-size: 1.2em;
+    text-align: center;
+    text-decoration: underline;
+}
+
+footer .services span {
+    font-size: 0.8em;
+    color: $primary-color;
+    width: 100%;
+    display: block;
+}
+
+footer .copywrites {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.8em;
+}
+
+footer .copywrites p {
+    color: $color-one;
+    font-family: 'Montserrat-Medium';
+    font-size: 80%;
+}
+
+footer .copywrites p a, footer .copywrites p a:visited, footer .copywrites p a:hover {
+    color: $color-one;
+    font-family: 'Montserrat-Medium';
+    font-size: 1em;
+}
+
+footer .copywrites p:nth-child(2) {
+    text-align: center;
+}
+
+footer .copywrites p:nth-child(3) {
+    text-align: right;
+}
+
+@media (max-width: 991px) {
+    footer .social {
+        padding: 2em 1em;
+    }
+    footer .social .fb, footer .social .ig, footer .social .gm {
+        width: auto;
+    }
+    footer .social h4, footer .copywrites p {
+        text-align: center !important;
+    }   
+    footer .copywrites .Myra {
+        order: 1;
+        font-weight: 600;
+    }
+    footer .copywrites .Kayla {
+        order: 2;
+    }
+    footer .copywrites .Megan {
+        order: 3;
+    }
+}
+
+@media (max-width: 500px) {
+    footer .social .fb, footer .social .ig, footer .social .gm {
+        width: 100%;
+        text-align: center;
+    }
+}
