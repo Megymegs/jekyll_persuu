@@ -1,103 +1,90 @@
-.homepage-main {
-    position: relative;
-    background-image: url("images/main-images/main-image-1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    margin-top: 115px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.homepage-main .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
-    background: rgba(0, 0, 0, 0.12);
-}
-
-.homepage-main .left {
-    background: $background-color;
-    padding: 2em;
-}
-
-.homepage-main .left .main-heading {
-    color: $color-two;
-    font-family: 'Youth';
-    font-size: 7.5vw;
-    text-align: right;
-}
-
-.homepage-main .left .secondary-heading {
-    font-family: 'Montserrat-Medium';
-    color: $primary-color;
-    font-size: 3vw;
-}
-
-.homepage-main .right {
-    padding: 2em;
-    text-align: center;
-}
-
-.homepage-main .right p {
-    font-family: 'Montserrat-Medium';
-    color: $color-two;
-    font-size: 0.8em;
-    margin-bottom: 2em;
-    text-align: left;
-}
-
-.homepage-main .right a {
-    background: $primary-color;
-    border-radius: 50px;
-    color: $color-two;
-    padding: 0.5em 2em;
-}
-
-@media (max-width: 1261px) {
-    .homepage-main {
-        margin-top: 100px;
-    }    
-}
-
-@media (max-width: 1023px) {
-    .homepage-main {
-        margin-top: 18%;
-    }  
-    .homepage-main .left .secondary-heading, .homepage-main .left .main-heading {
-        text-align: center;
-        text-shadow: 1px 1px 1px #000000;
-    }  
-}
-
-@media (max-width: 990px) {
-    .homepage-main {
-        margin-top: 10em;
-        background-size: cover;
-        background-position: 90% center;
+body {
+    &.default {
+        color: #000;
+        text-shadow: 0 0 2.5px #e6d7ff;
+        background-image: linear-gradient(to bottom right, #d2afff, #e6d7ff, #C8A2C8, #e6d7ff, #d2afff);
+        .persuu {
+            .icon {
+                svg {
+                    &.fa-caret-left {
+                        color: #c8a2c8;
+                    }
+                }
+                &::before {
+                    background-color: #c8a2c8;
+                }
+            }
+        }
+        span {
+            color: #fdfdfd;
+            text-shadow: 0 0 2.5px #c8a2c8;
+        }
+    }
+    &.recreational {
+        color: #212121;
+        text-shadow: 0 0 2.5px #FFF9F9;
+        background-image: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1);
+        .persuu {
+            .icon {
+                svg {
+                    &.fa-caret-left {
+                        color: #D77FA1;
+                    }
+                }
+                &::before {
+                    background-color: #D77FA1;
+                }
+            }
+        }
+        span {
+            color: #fdfdfd;
+            text-shadow: 0 0 2.5px #D77FA1;
+        }
+    }
+    main {
+        max-width: 600px;
+        margin: 40px auto;
+        .brand_ID {
+            justify-content: center;
+            align-items: center;
+            .persuu {
+                width: 55px;
+                margin-right: 10px;
+                .icon {
+                    position: relative;
+                    font-family: "Font Awesome 6 Free";
+                    line-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    svg {
+                        &.fa-heart {
+                            color: #fff;
+                            font-size: 28px;
+                            margin-left: 7px;
+                            z-index: 2;
+                        }
+                        &.fa-caret-left {
+                            font-size: 42px;
+                            position: absolute;
+                            right: -2.5px;
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        width: 42px;
+                        height: 40px;
+                        border-radius: 10px;
+                        position: absolute;
+                        z-index: 0;
+                    }
+                }
+            }
+            span {
+                font-weight: 700;
+                font-size: 21px;
+                color: #fdfdfd;
+                text-shadow: 0 0 2.5px #cabbe9;
+            }
+        }
     }
 }
-
-@media (max-width: 678px) {
-    .homepage-main {
-        margin-top: 23%;
-        padding-top: 1em !important;
-    }  
-    .homepage-main .left .secondary-heading {
-        font-size: 6vw;
-    }  
-    .homepage-main .left .main-heading {
-        font-size: 15vw;
-    }
-}
-
-@media (max-width: 425px) {
-    .homepage-main {
-        margin-top: 95px;
-        background-position: 20% center;
-    }    
-}
-

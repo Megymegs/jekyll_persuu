@@ -1,12 +1,12 @@
 <!doctype html>
 <html>
   {% include head.html %}
-  <body>
-      <section>
-        <main>
-          {{ content }}
-        </main>
-        {% include scripts.html %}
-      </section>
-    </body>
+  <body class="default">
+    <main class="container">
+      {% include nav.html %}
+      {{ content }}
+      {% include footer.html %}
+    </main>
+    {% include scripts.html %}
+  </body>
 </html> 
