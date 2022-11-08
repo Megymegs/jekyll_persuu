@@ -1,60 +1,10 @@
-$("#palette_1").on('click', function(){
-    $('#homepage-main').removeClass().addClass('palette_1');
-    $('#pattern').parent('.col-3').removeClass('d-none');
-    $("#linear").on('click', function(){
-        $('#homepage-main').removeClass('conic').addClass('linear');
-    });
-    $("#conic").on('click', function(){
-        $('#homepage-main').removeClass('linear').addClass('conic');
-    });
+$("#romance").on('click', function(){
+    $('body').removeClass().addClass('default');
+    $('#favicon_ico').attr('href','https://megymegs.github.io/jekyll_persuu/assets/favicon/favicon_1.ico');
+    $('#favicon_png').attr('href','https://megymegs.github.io/jekyll_persuu/assets/favicon/favicon_1.png');
 });
-$("#palette_2").on('click', function(){
-    $('#homepage-main').removeClass().addClass('palette_2');
-    $('#pattern').parent('.col-3').removeClass('d-none');
-    $("#linear").on('click', function(){
-        $('#homepage-main').removeClass('conic').addClass('linear');
-    });
-    $("#conic").on('click', function(){
-        $('#homepage-main').removeClass('linear').addClass('conic');
-    });
-});
-$("#palette_3").on('click', function(){
-    $('#homepage-main').removeClass().addClass('palette_3');
-    $('#pattern').parent('.col-3').removeClass('d-none');
-    $("#linear").on('click', function(){
-        $('#homepage-main').removeClass('conic').addClass('linear');
-    });
-    $("#conic").on('click', function(){
-        $('#homepage-main').removeClass('linear').addClass('conic');
-    });
-});
-$("#palette_4").on('click', function(){
-    $('#homepage-main').removeClass().addClass('palette_4');
-    $('#pattern').parent('.col-3').removeClass('d-none');
-    $("#linear").on('click', function(){
-        $('#homepage-main').removeClass('conic').addClass('linear');
-    });
-    $("#conic").on('click', function(){
-        $('#homepage-main').removeClass('linear').addClass('conic');
-    });
-});
-$("#palette_5").on('click', function(){
-    $('#homepage-main').removeClass().addClass('palette_5');
-    $('#pattern').parent('.col-3').removeClass('d-none');
-    $("#linear").on('click', function(){
-        $('#homepage-main').removeClass('conic').addClass('linear');
-    });
-    $("#conic").on('click', function(){
-        $('#homepage-main').removeClass('linear').addClass('conic');
-    });
-});
-$("#palette_6").on('click', function(){
-    $('#homepage-main').removeClass().addClass('palette_6');
-    $('#pattern').parent('.col-3').removeClass('d-none');
-    $("#linear").on('click', function(){
-        $('#homepage-main').removeClass('conic').addClass('linear');
-    });
-    $("#conic").on('click', function(){
-        $('#homepage-main').removeClass('linear').addClass('conic');
-    });
+$("#companion").on('click', function(){
+    $('body').removeClass().addClass('recreational');
+    $('#favicon_ico').attr('href','https://megymegs.github.io/jekyll_persuu/assets/favicon/favicon_2.ico');
+    $('#favicon_png').attr('href','https://megymegs.github.io/jekyll_persuu/assets/favicon/favicon_2.png');
 });
