@@ -8,12 +8,17 @@ $grid-breakpoints: (
 );
 
 // Place all custom and bootstrap override variables in this file
-$primary-color: #FE8D9E;
-$secondary-color: #52BC52;
-$border-color: rgba(141, 139, 139, 0.12);
-$background-color: rgba(82, 188, 82, 0.12);
-$color-one: #8E8B8B;
-$color-two:#FFF;
+$main-color: #fdfdfd;
+$primary-color: #212121;
+$secondary-color: #c8a2c8;
+$color-one: #d6e4f9;
+$color-two: #D77FA1;
+$background-1: unquote('#a3d5e947');
+$background-2: unquote('#c8a2c859');
+$background-image-1: linear-gradient(to bottom right, unquote('#d2afff80'), unquote('#e6d7ff80'), unquote('#c8a2c880'), unquote('#e6d7ff80'), unquote('#d2afff80'));
+$background-image-1-1: linear-gradient(to bottom right, #d2afff, #e6d7ff, #C8A2C8, #e6d7ff, #d2afff);
+$background-image-2: linear-gradient(to bottom right, unquote('#d77fa180'), unquote('#baabda80'), unquote('#d6e5fa80'), unquote('#baabda80'), unquote('#d77fa180'));
+$background-image-2-1: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1);
 $base-color: $primary-color;
 
 // Transitions
@@ -21,96 +26,41 @@ $transition-base: all 3s ease-in-out;
 
 //Fonts
 @font-face {
-  font-family: Youth;
-  src: url("fonts/YouthTouchDemoRegular-4VwY.ttf");
+  font-family: DM-Italic;
+  src: url("/fonts/DMSerifDisplay-Italic.ttf");
 }
 
 @font-face {
-  font-family: Montserrat-Black;
-  src: url("fonts/Montserrat-Black.ttf");
+  font-family: DM-Regular;
+  src: url("/fonts/DMSerifDisplay-Regular.ttf");
 }
 
 @font-face {
-  font-family: Montserrat-BlackItalic;
-  src: url("fonts/Montserrat-BlackItalic.ttf");
+  font-family: Merriweather-Italic;
+  src: url("/fonts/Merriweather-Italic.ttf");
 }
 
 @font-face {
-  font-family: Montserrat-Bold;
-  src: url("fonts/Montserrat-Bold.ttf");
+  font-family: Merriweather-Black;
+  src: url("/fonts/Merriweather-Black.ttf");
 }
 
 @font-face {
-  font-family: Montserrat-BoldItalic;
-  src: url("fonts/Montserrat-BoldItalic.ttf");
+  font-family: Merriweather-BlackItalic;
+  src: url("/fonts/Merriweather-BlackItalic.ttf");
 }
 
 @font-face {
-  font-family: Montserrat-ExtraBold;
-  src: url("fonts/Montserrat-ExtraBold.ttf");
+  font-family: Merriweather-Regular;
+  src: url("/fonts/Merriweather-Regular.ttf");
 }
 
 @font-face {
-  font-family: Montserrat-ExtraBoldItalic;
-  src: url("fonts/Montserrat-ExtraBoldItalic.ttf");
+  font-family: Merriweather-Bold;
+  src: url("/fonts/Merriweather-Bold.ttf");
 }
 
 @font-face {
-  font-family: Montserrat-ExtraLight;
-  src: url("fonts/Montserrat-ExtraLight.ttf");
-}
-
-@font-face {
-  font-family: Montserrat-ExtraLightItalic;
-  src: url("fonts/Montserrat-ExtraLightItalic.ttf");
-}
-
-@font-face {
-  font-family: Montserrat-Italic;
-  src: url("fonts/Montserrat-Italic.ttf");
-}
-
-@font-face {
-  font-family: Montserrat-Light;
-  src: url("fonts/Montserrat-Light.ttf");
-}
-
-@font-face {
-  font-family: Montserrat-LightItalic;
-  src: url("fonts/Montserrat-LightItalic.ttf");
-}
-
-@font-face {
-  font-family: Montserrat-Medium;
-  src: url("fonts/Montserrat-Medium.ttf");
-}
-
-@font-face {
-  font-family: Montserrat-MediumItalic;
-  src: url("fonts/Montserrat-MediumItalic.ttf");
-}
-
-@font-face {
-  font-family: Montserrat-Regular;
-  src: url("fonts/Montserrat-Regular.ttf");
-}
-
-@font-face {
-  font-family: Montserrat-SemiBold;
-  src: url("fonts/Montserrat-SemiBold.ttf");
-}
-
-@font-face {
-  font-family: Montserrat-SemiBoldItalic;
-  src: url("fonts/Montserrat-SemiBoldItalic.ttf");
-}
-
-@font-face {
-  font-family: Montserrat-Thin;
-  src: url("fonts/Montserrat-Thin.ttf");
-}
-
-@font-face {
-  font-family: Montserrat-ThinItalic;
-  src: url("fonts/Montserrat-ThinItalic.ttf");
+  font-family: Merriweather-BoldItalic;
+  src: url("/fonts/PlayfairDisplay-BoldItalic.ttf");
 }

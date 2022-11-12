@@ -1,497 +1,201 @@
-.previews {
-    .col-9 {
-        .col-sm {
-            cursor: pointer;
-            .swatches {
-                list-style-type: none;
-                padding-left: 0;
-                justify-content: space-evenly;
-                li {
-                    display: block;
-                    width: 20px;
-                    height: 20px;
-                    box-shadow: 0 0 3px 0px #bfbfbf;
-                    &.palette_1_1 {
-                        background-color: #A1EAFB;
-                    }
-                    &.palette_1_2 {
-                        background-color: #FDFDFD;
-                    }
-                    &.palette_1_3 {
-                        background-color: #FFCEF3;
-                    }
-                    &.palette_1_4 {
-                        background-color: #CABBE9;
-                    }
-                    &.palette_2_1 {
-                        background-color: #D77FA1;
-                    }
-                    &.palette_2_2 {
-                        background-color: #BAABDA;
-                    }
-                    &.palette_2_3 {
-                        background-color: #D6E5FA;
-                    }
-                    &.palette_2_4 {
-                        background-color: #FFF9F9;
-                    }
-                    &.palette_3_1 {
-                        background-color: #F07DEA;
-                    }
-                    &.palette_3_2 {
-                        background-color: #A460ED;
-                    }
-                    &.palette_3_3 {
-                        background-color: #9FC9F3;
-                    }
-                    &.palette_3_4 {
-                        background-color: #EEEEEE;
-                    }
-                    &.palette_4_1 {
-                        background-color: #A8D8EA;
-                    }
-                    &.palette_4_2 {
-                        background-color: #AA96DA;
-                    }
-                    &.palette_4_3 {
-                        background-color: #FCBAD3;
-                    }
-                    &.palette_4_4 {
-                        background-color: #FFFFD2;
-                    }
-                    &.palette_5_1 {
-                        background-color: #6D0C74;
-                    }
-                    &.palette_5_2 {
-                        background-color: #7F78D2;
-                    }
-                    &.palette_5_3 {
-                        background-color: #D2D0FE;
-                    }
-                    &.palette_5_4 {
-                        background-color: #FDECFF;
-                    }
-                    &.palette_6_1 {
-                        background-color: #C8A2C8;
-                    }
-                    &.palette_6_2 {
-                        background-color: #fff;
+
+.recreational {
+    #landing {
+        .acc_type {
+            .col-6 {
+                &#companion {
+                    h4{
+                        svg {
+                            &:nth-of-type(2) {
+                                color: #d77fa1;
+                            }
+                        }
                     }
                 }
-           }
+                .icon {
+                    :hover {
+                        color: #d77fa1;
+                    }
+                }
+            }
         }
-    }
-    .col-3 {
-        .col-sm {
-            cursor: pointer;
-            .swatches {
-                list-style-type: none;
-                padding-left: 0;
-                justify-content: space-between;
-                li {
-                    display: block;
-                    width: 20px;
-                    height: 20px;
-                    box-shadow: 0 0 3px 0px #bfbfbf;
-                    &#linear {
-                        background-image: linear-gradient(red, yellow, green);
-                    }
-                    &#conic {
-                        background-image: conic-gradient(from 90deg, red, yellow, green);
-                        border-radius: 50%;
-                    }
-                }
+        .member_type {
+            #quote {
+                border-image-source: $background-image-1;
+                background-image: linear-gradient(to left, transparent, $secondary-color, transparent);
+            }
+            button {
+                background-color: $color-two;
+                border-color: $color-two;
             }
         }
     }
 }
-#homepage-main {
-    .brand_ID {
-        justify-content: center;
-        align-items: center;
-        .persuu {
-            width: 55px;
-            margin-right: 10px;
-            .icon {
-                position: relative;
-                font-family: "Font Awesome 6 Free";
-                line-height: 40px;
-                display: flex;
-                align-items: center;
-                svg {
-                    &.fa-heart {
-                        color: #fff;
-                        font-size: 28px;
-                        margin-left: 7px;
-                        z-index: 2;
-                    }
-                    &.fa-caret-left {
-                        font-size: 42px;
-                        color: #000;
-                        position: absolute;
-                        right: -2.5px;
+#landing {
+    transform: translateY(5vw);
+    .text-content {
+        h4 {
+            font-size: calc(0.8rem + 0.6vw);
+        }
+        .img-holder {
+            min-width: 110px;
+            max-width: 80%;
+            margin: 0 auto;
+            animation: 5s infinite ease-in-out;
+            height: clamp(90px, 90%, 350px);
+        }
+    }
+    .acc_type {
+        .col-6 {
+            padding-left: 0;
+            &#romance {
+                h4{
+                    svg {
+                        position: relative;
+                        &:nth-of-type(2) {
+                            left: -5px;
+                        }
                     }
                 }
-                &::before {
-                    content: "";
-                    width: 42px;
-                    height: 40px;
-                    background-color: #000;
-                    border-radius: 10px;
-                    position: absolute;
-                    z-index: 0;
+                .icon {
+                    svg {
+                        animation-name: breathe_left;
+                    }
                 }
             }
-        }
-        span {
-            font-weight: 700;
-            font-size: 21px;
+            &#companion {
+                .icon {
+                    svg {
+                        animation-name: breathe_right;
+                    }
+                }
+            }
+            .icon {
+                cursor: pointer;
+                svg {
+                    font-size: 56px;
+                    margin: 10px auto;
+                    animation: 3s infinite ease-in-out;
+                    color: #fff;
+                    opacity: 0.8;
+                    @keyframes breathe_left {
+                        0% {
+                            transform: scale(0.9);
+                        }
+                        50% {
+                            transform: scale(1.09);
+                        }
+                        100% {
+                            transform: scale(0.9);
+                        }
+                    }
+                    @keyframes breathe_right {
+                        0% {
+                            transform: scale(1.09);
+                        }
+                        50% {
+                            transform: scale(0.9);
+                        }
+                        100% {
+                            transform: scale(1.09);
+                        }
+                    }
+                }
+                :hover {
+                    color: #917bb5;
+                    opacity: 1;
+                }
+            }
         }
     }
     .member_type {
         .text-content {
-            h4 {
-                font-size: calc(1.07rem + 0.3vw);
+            p {
+                animation: 5s infinite ease-in-out;
+                line-height: 40px;
             }
-        }
-    }    
-    &.palette_1 {
-        color: #212121;
-        text-shadow: 0 0 2.5px #FDFDFD;
-        background-image: linear-gradient(to bottom right, #a1eafb, #FFCEF3, #CABBE9, #FFCEF3, #a1eafb);
-        &.linear {
-            background-image: linear-gradient(to bottom right, #a1eafb, #FFCEF3, #CABBE9, #FFCEF3, #a1eafb);
-            .persuu {
-                .icon {
-                    svg {
-                        &.fa-caret-left {
-                            color: #cabbe9;
-                        }
-                    }
-                    &::before {
-                        background-color: #cabbe9;
-                    }
+            @keyframes increase_left {
+                0% {
+                    font-size: clamp(16px, 50%, 21px);
+                }
+                50% {
+                    font-size: calc(1.1rem + 0.3vw);
+                }
+                100% {
+                    font-size: clamp(16px, 50%, 21px);
                 }
             }
-            span {
-                color: #fdfdfd;
-                text-shadow: 0 0 2.5px #cabbe9;
-            }
-        }
-        &.conic {
-            background-image: conic-gradient(#CABBE9 5deg, #FFCEF3 90deg, #CABBE9 180deg, #a1eafb 270deg, #CABBE9 355deg);
-            .persuu {
-                .icon {
-                    svg {
-                        &.fa-caret-left {
-                            color: #ffcef3;
-                        }
-                    }
-                    &::before {
-                        background-color: #ffcef3;
-                    }
+            @keyframes increase_right {
+                0% {
+                    font-size: calc(1.1rem + 0.3vw);
                 }
-            }
-            span {
-                color: #fdfdfd;
-                text-shadow: 0 0 2.5px #ffcef3;
-            }
-        }
-        .persuu {
-            .icon {
-                svg {
-                    &.fa-caret-left {
-                        color: #cabbe9;
-                    }
+                50% {
+                    font-size: clamp(16px, 50%, 21px);
                 }
-                &::before {
-                    background-color: #cabbe9;
+                100% {
+                    font-size: calc(1.1rem + 0.3vw);
                 }
             }
         }
-        span {
-            color: #fdfdfd;
-            text-shadow: 0 0 2.5px #cabbe9;
+        #new {
+            p {
+                animation-name: increase_left;
+            }
+            .img-holder {
+                animation-name: breathe_left;
+            }
+        }
+        #member {
+            p {
+                animation-name: increase_right;
+            }
+            .img-holder {
+                animation-name: breathe_right;
+            }
+        }
+        .button-holder {
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 180px;
+            color: $main-color;
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+            border-radius: 5px;
+            line-height: 35px;
+            a, a:hover {
+                text-decoration: none;
+                display: block;
+                color: $main-color;
+            }
+        }
+        #back {
+            background-color: #e1c6e1;
+        }
+        button:hover, button:focus-within {
+            border-style: inset;
+            background-color: $primary-color;
+            border-color: $primary-color;
         }
     }
-    &.palette_2 {
-        color: #212121;
-        text-shadow: 0 0 2.5px #FFF9F9;
-        background-image: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1); 
-        &.linear {
-            background-image: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1);
-            .persuu {
-                .icon {
-                    svg {
-                        &.fa-caret-left {
-                            color: #D77FA1;
-                        }
-                    }
-                    &::before {
-                        background-color: #D77FA1;
-                    }
-                }
-            }
-            span {
-                color: #FFF9F9;
-                text-shadow: 0 0 2.5px #D77FA1;
-            }
+    #quote {
+        max-width: 600px;
+        border: 3px solid;
+        border-width: 6px;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 100%;
+        border-image-slice: 1 0;
+        border-image-source: $background-image-2;
+        background-image: linear-gradient(to left, transparent, $background-1, transparent);
+        .quote-content span {
+            font-family: DM-Regular;
+            font-size: calc(1.2rem + 0.8vw);
         }
-        &.conic {
-            background-image: conic-gradient(#D6E5FA 5deg, #BAABDA 90deg, #D6E5FA 180deg, #D77FA1 270deg, #D6E5FA 355deg);
-            .persuu {
-                .icon {
-                    svg {
-                        &.fa-caret-left {
-                            color: #baabda;
-                        }
-                    }
-                    &::before {
-                        background-color: #baabda;
-                    }
-                }
-            }
-            span {
-                color: #FFF9F9;
-                text-shadow: 0 0 2.5px #baabda;
-            }
-        }
-        .persuu {
-            .icon {
-                svg {
-                    &.fa-caret-left {
-                        color: #D77FA1;
-                    }
-                }
-                &::before {
-                    background-color: #D77FA1;
-                }
-            }
-        }
-        span {
-            color: #fdfdfd;
-            text-shadow: 0 0 2.5px #D77FA1;
-        }
-    }
-    &.palette_3 {
-        color: #212121;
-        text-shadow: 0 0 2.5px #EEEEEE;
-        background-image: linear-gradient(to bottom right, #A460ED, #F07DEA, #D6E5FA, #F07DEA, #A460ED);
-        &.linear {
-            background-image: linear-gradient(to bottom right, #A460ED, #F07DEA, #D6E5FA, #F07DEA, #A460ED);
-            .persuu {
-                .icon {
-                    svg {
-                        &.fa-caret-left {
-                            color: #9fc9f3;
-                        }
-                    }
-                    &::before {
-                        background-color: #9fc9f3;
-                    }
-                }
-            }
-            span {
-                color: #EEEEEE;
-                text-shadow: 0 0 2.5px #9fc9f3;
-            }
-        }
-        &.conic {
-            background-image: conic-gradient(#D6E5FA 5deg, #F07DEA 90deg, #D6E5FA 180deg, #A460ED 270deg, #D6E5FA 355deg);
-            .persuu {
-                .icon {
-                    svg {
-                        &.fa-caret-left {
-                            color: #f07dea;
-                        }
-                    }
-                    &::before {
-                        background-color: #f07dea;
-                    }
-                }
-            }
-            span {
-                color: #EEEEEE;
-                text-shadow: 0 0 2.5px #f07dea;
-            }
-        }
-        .persuu {
-            .icon {
-                svg {
-                    &.fa-caret-left {
-                        color: #9fc9f3;
-                    }
-                }
-                &::before {
-                    background-color: #9fc9f3;
-                }
-            }
-        }
-        span {
-            color: #fdfdfd;
-            text-shadow: 0 0 2.5px #9fc9f3;
-        }
-    }
-    &.palette_4 {
-        color: #212121;
-        text-shadow: 0 0 2.5px #FFFFD2;
-        background-image: linear-gradient(to bottom right, #A8D8EA, #AA96DA, #FCBAD3, #AA96DA, #A8D8EA);
-        &.linear {
-            background-image: linear-gradient(to bottom right, #A8D8EA, #AA96DA, #FCBAD3, #AA96DA, #A8D8EA);
-            .persuu {
-                .icon {
-                    svg {
-                        &.fa-caret-left {
-                            color: #fcbad3;
-                        }
-                    }
-                    &::before {
-                        background-color: #fcbad3;
-                    }
-                }
-            }
-            span {
-                color: #FFFFD2;
-                text-shadow: 0 0 2.5px #fcbad3;
-            }
-        }
-        &.conic {
-            background-image: conic-gradient(#FCBAD3 5deg, #AA96DA 90deg, #FCBAD3 180deg, #A8D8EA 270deg, #FCBAD3 355deg);
-            .persuu {
-                .icon {
-                    svg {
-                        &.fa-caret-left {
-                            color: #aa96da;
-                        }
-                    }
-                    &::before {
-                        background-color: #aa96da;
-                    }
-                }
-            }
-            span {
-                color: #FFFFD2;
-                text-shadow: 0 0 2.5px #aa96da;
-            }
-        }
-        .persuu {
-            .icon {
-                svg {
-                    &.fa-caret-left {
-                        color: #fcbad3;
-                    }
-                }
-                &::before {
-                    background-color: #fcbad3;
-                }
-            }
-        }
-        span {
-            color: #fdfdfd;
-            text-shadow: 0 0 2.5px #fcbad3;
-        }
-    }
-    &.palette_5 {
-        color: #212121;
-        text-shadow: 0 0 2.5px #FDECFF;
-        background-image: linear-gradient(to bottom right, #6D0C74, #7F78D2, #D2D0FE, #7F78D2, #6D0C74);
-        &.linear {
-            background-image: linear-gradient(to bottom right, #6D0C74, #7F78D2, #D2D0FE, #7F78D2, #6D0C74); 
-            .persuu {
-                .icon {
-                    svg {
-                        &.fa-caret-left {
-                            color: #6d0c74;
-                        }
-                    }
-                    &::before {
-                        background-color: #6d0c74;
-                    }
-                }
-            }
-            span {
-                color: #FFFFD2;
-                text-shadow: 0 0 2.5px #6d0c74;
-            } 
-        }
-        &.conic {
-            background-image: conic-gradient(#D2D0FE 5deg, #7F78D2 90deg, #D2D0FE 180deg, #6d0c74 270deg, #D2D0FE 355deg);
-            .persuu {
-                .icon {
-                    svg {
-                        &.fa-caret-left {
-                            color: #7f78d2;
-                        }
-                    }
-                    &::before {
-                        background-color: #7f78d2;
-                    }
-                }
-            }
-            span {
-                color: #FFFFD2;
-                text-shadow: 0 0 2.5px #7f78d2;
-            }
-        }
-        .persuu {
-            .icon {
-                svg {
-                    &.fa-caret-left {
-                        color: #6d0c74;
-                    }
-                }
-                &::before {
-                    background-color: #6d0c74;
-                }
-            }
-        }
-        span {
-            color: #fdfdfd;
-            text-shadow: 0 0 2.5px #6d0c74;
-        }
-    }
-    &.palette_6 {
-        color: #000;
-        text-shadow: 0 0 2.5px #e6d7ff;
-        background-image: linear-gradient(to bottom right, #d2afff, #e6d7ff, #C8A2C8, #e6d7ff, #d2afff);
-        &.linear {
-            background-image: linear-gradient(to bottom right, #d2afff, #e6d7ff, #C8A2C8, #e6d7ff, #d2afff); 
-        }
-        &.conic {
-            background-image: conic-gradient(#e6d7ff 5deg, #C8A2C8 90deg, #e6d7ff 180deg, #C8A2C8 270deg, #e6d7ff 355deg);
-        }
-        .persuu {
-            .icon {
-                svg {
-                    &.fa-caret-left {
-                        color: #c8a2c8;
-                    }
-                }
-                &::before {
-                    background-color: #c8a2c8;
-                }
-            }
-        }
-        span {
-            color: #fdfdfd;
-            text-shadow: 0 0 2.5px #c8a2c8;
-        }
-    }
-}
-@media (min-width: 425px) {
-    .previews {
-        .col-3 {
-            .col-sm {
-                .swatches {
-                    justify-content: center;
-                    li#conic {
-                        margin: 0 0 0 20px;
-                    }
-                    li#conic {
-                        margin: 0 20px 0 0;
-                    }
-                }
-            }
+        .quote-source {
+            font-size: calc(0.8rem + 0.8vw);
+            font-family: DM-Italic;
         }
     }
 }

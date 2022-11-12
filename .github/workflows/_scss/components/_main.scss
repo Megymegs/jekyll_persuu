@@ -1,103 +1,114 @@
-.homepage-main {
-    position: relative;
-    background-image: url("images/main-images/main-image-1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    margin-top: 115px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.homepage-main .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 0;
-    background: rgba(0, 0, 0, 0.12);
-}
-
-.homepage-main .left {
-    background: $background-color;
-    padding: 2em;
-}
-
-.homepage-main .left .main-heading {
-    color: $color-two;
-    font-family: 'Youth';
-    font-size: 7.5vw;
-    text-align: right;
-}
-
-.homepage-main .left .secondary-heading {
-    font-family: 'Montserrat-Medium';
-    color: $primary-color;
-    font-size: 3vw;
-}
-
-.homepage-main .right {
-    padding: 2em;
-    text-align: center;
-}
-
-.homepage-main .right p {
-    font-family: 'Montserrat-Medium';
-    color: $color-two;
-    font-size: 0.8em;
-    margin-bottom: 2em;
-    text-align: left;
-}
-
-.homepage-main .right a {
-    background: $primary-color;
-    border-radius: 50px;
-    color: $color-two;
-    padding: 0.5em 2em;
-}
-
-@media (max-width: 1261px) {
-    .homepage-main {
-        margin-top: 100px;
-    }    
-}
-
-@media (max-width: 1023px) {
-    .homepage-main {
-        margin-top: 18%;
-    }  
-    .homepage-main .left .secondary-heading, .homepage-main .left .main-heading {
-        text-align: center;
-        text-shadow: 1px 1px 1px #000000;
-    }  
-}
-
-@media (max-width: 990px) {
-    .homepage-main {
-        margin-top: 10em;
-        background-size: cover;
-        background-position: 90% center;
+body {
+    background-image: $background-image-1;
+    font-family: Merriweather-Regular;
+    p, span, button, a {
+        font-size: clamp(14px, 50%, 21px);
+    }
+    h1, h2, h3, h4, h5, h6 {
+        font-family: Merriweather-Black;
+    }
+    strong, b {
+        font-family: Merriweather-Bold;
+    }
+    main {
+        box-shadow: 0px 0px 10px 2px #c8a2c8;
+        border-radius: 5px;
+        max-width: calc(100% - 30px);
+        margin: 40px auto;
+        background-image: $background-image-1-1;
+        color: $primary-color;
+        text-shadow: 0 0 2.5px $main-color;
+        min-height: 90vh;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .brand_ID {
+            justify-content: center;
+            align-items: center;
+            .persuu {
+                width: 55px;
+                margin-right: 10px;
+                .icon {
+                    position: relative;
+                    font-family: "Font Awesome 6 Free";
+                    line-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    svg {
+                        color: #fff;
+                        &.fa-heart {
+                            font-size: 28px;
+                            margin-left: 7px;
+                            z-index: 2;
+                        }
+                        &.fa-caret-left {
+                            font-size: 42px;
+                            position: absolute;
+                            right: -2.5px;
+                            color: $secondary-color;
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        width: 42px;
+                        height: 40px;
+                        border-radius: 10px;
+                        position: absolute;
+                        z-index: 0;
+                        background-color: $secondary-color;
+                    }
+                }
+            }
+            span#name {
+                font-weight: 700;
+                font-size: 28px;
+                font-family: DM-Regular;
+                color: $main-color;
+                text-shadow: 0 0 2.5px #c8a2c8;
+            }
+        }
+        .intro {
+            font-family: Merriweather-Italic;
+        }
+    }
+    &.recreational {
+        background-image: $background-image-2;
+        main {
+            background-image: $background-image-2-1;
+            .persuu {
+                .icon {
+                    svg {
+                        &.fa-caret-left {
+                            color: $color-two;
+                        }
+                    }
+                    &::before {
+                        background-color: $color-two;
+                    }
+                }
+            }
+            span#name {
+                text-shadow: 0 0 2.5px $color-two;
+            }
+        }
     }
 }
 
-@media (max-width: 678px) {
-    .homepage-main {
-        margin-top: 23%;
-        padding-top: 1em !important;
-    }  
-    .homepage-main .left .secondary-heading {
-        font-size: 6vw;
-    }  
-    .homepage-main .left .main-heading {
-        font-size: 15vw;
+button {
+    width: 180px;
+    color: $main-color;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+    border-radius: 5px;
+    line-height: 35px;
+    a, a:hover {
+        text-decoration: none;
+        display: block;
+        color: $main-color;
     }
 }
 
-@media (max-width: 425px) {
-    .homepage-main {
-        margin-top: 95px;
-        background-position: 20% center;
-    }    
+button:hover, button:focus-within {
+    border-style: inset;
+    background-color: $primary-color;
+    border-color: $primary-color;
 }
-

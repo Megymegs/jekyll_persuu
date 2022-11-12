@@ -1,11 +1,52 @@
+
+.recreational {
+    #landing {
+        .acc_type {
+            .col-6 {
+                &#companion {
+                    h4{
+                        svg {
+                            &:nth-of-type(2) {
+                                color: #d77fa1;
+                            }
+                        }
+                    }
+                }
+                .icon {
+                    :hover {
+                        color: #d77fa1;
+                    }
+                }
+            }
+        }
+        .member_type {
+            #quote {
+                border-image-source: $background-image-1;
+                background-image: linear-gradient(to left, transparent, $secondary-color, transparent);
+            }
+            button {
+                background-color: $color-two;
+                border-color: $color-two;
+            }
+        }
+    }
+}
 #landing {
+    transform: translateY(5vw);
     .text-content {
         h4 {
-            font-size: calc(1.07rem + 0.3vw);
+            font-size: calc(0.8rem + 0.6vw);
+        }
+        .img-holder {
+            min-width: 110px;
+            max-width: 80%;
+            margin: 0 auto;
+            animation: 5s infinite ease-in-out;
+            height: clamp(90px, 90%, 350px);
         }
     }
     .acc_type {
-        .pl-0 {
+        .col-6 {
             padding-left: 0;
             &#romance {
                 h4{
@@ -23,18 +64,6 @@
                 }
             }
             &#companion {
-                h4{
-                    svg {
-                        position: relative;
-                        &:nth-of-type(1) {
-                            transform: rotateZ(90deg);
-                        }
-                        &:nth-of-type(2) {
-                            color: #e6d6ff;
-                            margin: 0 5px;
-                        }
-                    }
-                }
                 .icon {
                     svg {
                         animation-name: breathe_right;
@@ -47,7 +76,8 @@
                     font-size: 56px;
                     margin: 10px auto;
                     animation: 3s infinite ease-in-out;
-
+                    color: #fff;
+                    opacity: 0.8;
                     @keyframes breathe_left {
                         0% {
                             transform: scale(0.9);
@@ -73,21 +103,99 @@
                 }
                 :hover {
                     color: #917bb5;
+                    opacity: 1;
                 }
             }
         }
     }
-}
-.recreational {
-    #landing {
-        .acc_type {
-            .pl-0 {
-                .icon {
-                    :hover {
-                        color: #d77fa1;
-                    }
+    .member_type {
+        .text-content {
+            p {
+                animation: 5s infinite ease-in-out;
+                line-height: 40px;
+            }
+            @keyframes increase_left {
+                0% {
+                    font-size: clamp(16px, 50%, 21px);
+                }
+                50% {
+                    font-size: calc(1.1rem + 0.3vw);
+                }
+                100% {
+                    font-size: clamp(16px, 50%, 21px);
                 }
             }
+            @keyframes increase_right {
+                0% {
+                    font-size: calc(1.1rem + 0.3vw);
+                }
+                50% {
+                    font-size: clamp(16px, 50%, 21px);
+                }
+                100% {
+                    font-size: calc(1.1rem + 0.3vw);
+                }
+            }
+        }
+        #new {
+            p {
+                animation-name: increase_left;
+            }
+            .img-holder {
+                animation-name: breathe_left;
+            }
+        }
+        #member {
+            p {
+                animation-name: increase_right;
+            }
+            .img-holder {
+                animation-name: breathe_right;
+            }
+        }
+        .button-holder {
+            justify-content: space-around;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 180px;
+            color: $main-color;
+            background-color: $secondary-color;
+            border-color: $secondary-color;
+            border-radius: 5px;
+            line-height: 35px;
+            a, a:hover {
+                text-decoration: none;
+                display: block;
+                color: $main-color;
+            }
+        }
+        #back {
+            background-color: #e1c6e1;
+        }
+        button:hover, button:focus-within {
+            border-style: inset;
+            background-color: $primary-color;
+            border-color: $primary-color;
+        }
+    }
+    #quote {
+        max-width: 600px;
+        border: 3px solid;
+        border-width: 6px;
+        overflow: hidden;
+        margin: 0 auto;
+        width: 100%;
+        border-image-slice: 1 0;
+        border-image-source: $background-image-2;
+        background-image: linear-gradient(to left, transparent, $background-1, transparent);
+        .quote-content span {
+            font-family: DM-Regular;
+            font-size: calc(1.2rem + 0.8vw);
+        }
+        .quote-source {
+            font-size: calc(0.8rem + 0.8vw);
+            font-family: DM-Italic;
         }
     }
 }

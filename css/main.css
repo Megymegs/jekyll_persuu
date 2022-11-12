@@ -1,66 +1,28 @@
 @font-face {
-  font-family: Youth;
-  src: url("fonts/YouthTouchDemoRegular-4VwY.ttf"); }
+  font-family: DM-Italic;
+  src: url("/fonts/DMSerifDisplay-Italic.ttf"); }
 @font-face {
-  font-family: Montserrat-Black;
-  src: url("fonts/Montserrat-Black.ttf"); }
+  font-family: DM-Regular;
+  src: url("/fonts/DMSerifDisplay-Regular.ttf"); }
 @font-face {
-  font-family: Montserrat-BlackItalic;
-  src: url("fonts/Montserrat-BlackItalic.ttf"); }
+  font-family: Merriweather-Italic;
+  src: url("/fonts/Merriweather-Italic.ttf"); }
 @font-face {
-  font-family: Montserrat-Bold;
-  src: url("fonts/Montserrat-Bold.ttf"); }
+  font-family: Merriweather-Black;
+  src: url("/fonts/Merriweather-Black.ttf"); }
 @font-face {
-  font-family: Montserrat-BoldItalic;
-  src: url("fonts/Montserrat-BoldItalic.ttf"); }
+  font-family: Merriweather-BlackItalic;
+  src: url("/fonts/Merriweather-BlackItalic.ttf"); }
 @font-face {
-  font-family: Montserrat-ExtraBold;
-  src: url("fonts/Montserrat-ExtraBold.ttf"); }
+  font-family: Merriweather-Regular;
+  src: url("/fonts/Merriweather-Regular.ttf"); }
 @font-face {
-  font-family: Montserrat-ExtraBoldItalic;
-  src: url("fonts/Montserrat-ExtraBoldItalic.ttf"); }
+  font-family: Merriweather-Bold;
+  src: url("/fonts/Merriweather-Bold.ttf"); }
 @font-face {
-  font-family: Montserrat-ExtraLight;
-  src: url("fonts/Montserrat-ExtraLight.ttf"); }
-@font-face {
-  font-family: Montserrat-ExtraLightItalic;
-  src: url("fonts/Montserrat-ExtraLightItalic.ttf"); }
-@font-face {
-  font-family: Montserrat-Italic;
-  src: url("fonts/Montserrat-Italic.ttf"); }
-@font-face {
-  font-family: Montserrat-Light;
-  src: url("fonts/Montserrat-Light.ttf"); }
-@font-face {
-  font-family: Montserrat-LightItalic;
-  src: url("fonts/Montserrat-LightItalic.ttf"); }
-@font-face {
-  font-family: Montserrat-Medium;
-  src: url("fonts/Montserrat-Medium.ttf"); }
-@font-face {
-  font-family: Montserrat-MediumItalic;
-  src: url("fonts/Montserrat-MediumItalic.ttf"); }
-@font-face {
-  font-family: Montserrat-Regular;
-  src: url("fonts/Montserrat-Regular.ttf"); }
-@font-face {
-  font-family: Montserrat-SemiBold;
-  src: url("fonts/Montserrat-SemiBold.ttf"); }
-@font-face {
-  font-family: Montserrat-SemiBoldItalic;
-  src: url("fonts/Montserrat-SemiBoldItalic.ttf"); }
-@font-face {
-  font-family: Montserrat-Thin;
-  src: url("fonts/Montserrat-Thin.ttf"); }
-@font-face {
-  font-family: Montserrat-ThinItalic;
-  src: url("fonts/Montserrat-ThinItalic.ttf"); }
+  font-family: Merriweather-BoldItalic;
+  src: url("/fonts/PlayfairDisplay-BoldItalic.ttf"); }
 .navbar {
-  border-top: 1em solid rgba(141, 139, 139, 0.12);
-  border-bottom: 1em solid rgba(141, 139, 139, 0.12);
-  border-left: 0.8em solid rgba(141, 139, 139, 0.12);
-  border-right: 0.8em solid rgba(141, 139, 139, 0.12);
-  background: #FFF;
   display: flex;
   flex-wrap: wrap;
   margin-right: 0; }
@@ -76,7 +38,7 @@
   margin-right: 0; }
 
 #navbarNav .navbar-nav a {
-  color: #8E8B8B;
+  color: #d6e4f9;
   font-family: 'Montserrat-Medium';
   font-size: 0.85em; }
 
@@ -88,31 +50,45 @@
   top: 50%;
   transform: translateY(-50%); }
 
-#landing .text-content h4 {
-  font-size: calc(1.07rem + 0.3vw); }
-#landing .acc_type .pl-0 {
-  padding-left: 0; }
-  #landing .acc_type .pl-0#romance h4 svg {
-    position: relative; }
-    #landing .acc_type .pl-0#romance h4 svg:nth-of-type(2) {
-      left: -5px; }
-  #landing .acc_type .pl-0#romance .icon svg {
-    animation-name: breathe_left; }
-  #landing .acc_type .pl-0#companion h4 svg {
-    position: relative; }
-    #landing .acc_type .pl-0#companion h4 svg:nth-of-type(1) {
-      transform: rotateZ(90deg); }
-    #landing .acc_type .pl-0#companion h4 svg:nth-of-type(2) {
-      color: #e6d6ff;
-      margin: 0 5px; }
-  #landing .acc_type .pl-0#companion .icon svg {
-    animation-name: breathe_right; }
-  #landing .acc_type .pl-0 .icon {
-    cursor: pointer; }
-    #landing .acc_type .pl-0 .icon svg {
-      font-size: 56px;
-      margin: 10px auto;
-      animation: 3s infinite ease-in-out; }
+.recreational #landing .acc_type .col-6#companion h4 svg:nth-of-type(2) {
+  color: #d77fa1; }
+.recreational #landing .acc_type .col-6 .icon :hover {
+  color: #d77fa1; }
+.recreational #landing .member_type #quote {
+  border-image-source: linear-gradient(to bottom right, #d2afff80, #e6d7ff80, #c8a2c880, #e6d7ff80, #d2afff80);
+  background-image: linear-gradient(to left, transparent, #c8a2c8, transparent); }
+.recreational #landing .member_type button {
+  background-color: #D77FA1;
+  border-color: #D77FA1; }
+
+#landing {
+  transform: translateY(5vw); }
+  #landing .text-content h4 {
+    font-size: calc(0.8rem + 0.6vw); }
+  #landing .text-content .img-holder {
+    min-width: 110px;
+    max-width: 80%;
+    margin: 0 auto;
+    animation: 5s infinite ease-in-out;
+    height: clamp(90px, 90%, 350px); }
+  #landing .acc_type .col-6 {
+    padding-left: 0; }
+    #landing .acc_type .col-6#romance h4 svg {
+      position: relative; }
+      #landing .acc_type .col-6#romance h4 svg:nth-of-type(2) {
+        left: -5px; }
+    #landing .acc_type .col-6#romance .icon svg {
+      animation-name: breathe_left; }
+    #landing .acc_type .col-6#companion .icon svg {
+      animation-name: breathe_right; }
+    #landing .acc_type .col-6 .icon {
+      cursor: pointer; }
+      #landing .acc_type .col-6 .icon svg {
+        font-size: 56px;
+        margin: 10px auto;
+        animation: 3s infinite ease-in-out;
+        color: #fff;
+        opacity: 0.8; }
 @keyframes breathe_left {
   0% {
     transform: scale(0.9); }
@@ -127,69 +103,156 @@
     transform: scale(0.9); }
   100% {
     transform: scale(1.09); } }
-    #landing .acc_type .pl-0 .icon :hover {
-      color: #917bb5; }
-
-.recreational #landing .acc_type .pl-0 .icon :hover {
-  color: #d77fa1; }
-
-body.default {
-  color: #000;
-  text-shadow: 0 0 2.5px #e6d7ff;
-  background-image: linear-gradient(to bottom right, #d2afff, #e6d7ff, #C8A2C8, #e6d7ff, #d2afff); }
-  body.default .persuu .icon svg.fa-caret-left {
-    color: #c8a2c8; }
-  body.default .persuu .icon::before {
-    background-color: #c8a2c8; }
-  body.default span {
+      #landing .acc_type .col-6 .icon :hover {
+        color: #917bb5;
+        opacity: 1; }
+  #landing .member_type .text-content p {
+    animation: 5s infinite ease-in-out;
+    line-height: 40px; }
+@keyframes increase_left {
+  0% {
+    font-size: clamp(16px, 50%, 21px); }
+  50% {
+    font-size: calc(1.1rem + 0.3vw); }
+  100% {
+    font-size: clamp(16px, 50%, 21px); } }
+@keyframes increase_right {
+  0% {
+    font-size: calc(1.1rem + 0.3vw); }
+  50% {
+    font-size: clamp(16px, 50%, 21px); }
+  100% {
+    font-size: calc(1.1rem + 0.3vw); } }
+  #landing .member_type #new p {
+    animation-name: increase_left; }
+  #landing .member_type #new .img-holder {
+    animation-name: breathe_left; }
+  #landing .member_type #member p {
+    animation-name: increase_right; }
+  #landing .member_type #member .img-holder {
+    animation-name: breathe_right; }
+  #landing .member_type .button-holder {
+    justify-content: space-around;
+    margin-bottom: 10px; }
+  #landing .member_type button {
+    width: 180px;
     color: #fdfdfd;
-    text-shadow: 0 0 2.5px #c8a2c8; }
-body.recreational {
-  color: #212121;
-  text-shadow: 0 0 2.5px #FFF9F9;
-  background-image: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1); }
-  body.recreational .persuu .icon svg.fa-caret-left {
-    color: #D77FA1; }
-  body.recreational .persuu .icon::before {
-    background-color: #D77FA1; }
-  body.recreational span {
-    color: #fdfdfd;
-    text-shadow: 0 0 2.5px #D77FA1; }
-body main {
-  max-width: 600px;
-  margin: 40px auto; }
-  body main .brand_ID {
-    justify-content: center;
-    align-items: center; }
-    body main .brand_ID .persuu {
-      width: 55px;
-      margin-right: 10px; }
-      body main .brand_ID .persuu .icon {
-        position: relative;
-        font-family: "Font Awesome 6 Free";
-        line-height: 40px;
-        display: flex;
-        align-items: center; }
-        body main .brand_ID .persuu .icon svg.fa-heart {
-          color: #fff;
-          font-size: 28px;
-          margin-left: 7px;
-          z-index: 2; }
-        body main .brand_ID .persuu .icon svg.fa-caret-left {
-          font-size: 42px;
-          position: absolute;
-          right: -2.5px; }
-        body main .brand_ID .persuu .icon::before {
-          content: "";
-          width: 42px;
-          height: 40px;
-          border-radius: 10px;
-          position: absolute;
-          z-index: 0; }
-    body main .brand_ID span {
-      font-weight: 700;
-      font-size: 21px;
-      color: #fdfdfd;
-      text-shadow: 0 0 2.5px #cabbe9; }
+    background-color: #c8a2c8;
+    border-color: #c8a2c8;
+    border-radius: 5px;
+    line-height: 35px; }
+    #landing .member_type button a, #landing .member_type button a:hover {
+      text-decoration: none;
+      display: block;
+      color: #fdfdfd; }
+  #landing .member_type #back {
+    background-color: #e1c6e1; }
+  #landing .member_type button:hover, #landing .member_type button:focus-within {
+    border-style: inset;
+    background-color: #212121;
+    border-color: #212121; }
+  #landing #quote {
+    max-width: 600px;
+    border: 3px solid;
+    border-width: 6px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    border-image-slice: 1 0;
+    border-image-source: linear-gradient(to bottom right, #d77fa180, #baabda80, #d6e5fa80, #baabda80, #d77fa180);
+    background-image: linear-gradient(to left, transparent, #a3d5e947, transparent); }
+    #landing #quote .quote-content span {
+      font-family: DM-Regular;
+      font-size: calc(1.2rem + 0.8vw); }
+    #landing #quote .quote-source {
+      font-size: calc(0.8rem + 0.8vw);
+      font-family: DM-Italic; }
+
+body {
+  background-image: linear-gradient(to bottom right, #d2afff80, #e6d7ff80, #c8a2c880, #e6d7ff80, #d2afff80);
+  font-family: Merriweather-Regular; }
+  body p, body span, body button, body a {
+    font-size: clamp(14px, 50%, 21px); }
+  body h1, body h2, body h3, body h4, body h5, body h6 {
+    font-family: Merriweather-Black; }
+  body strong, body b {
+    font-family: Merriweather-Bold; }
+  body main {
+    box-shadow: 0px 0px 10px 2px #c8a2c8;
+    border-radius: 5px;
+    max-width: calc(100% - 30px);
+    margin: 40px auto;
+    background-image: linear-gradient(to bottom right, #d2afff, #e6d7ff, #C8A2C8, #e6d7ff, #d2afff);
+    color: #212121;
+    text-shadow: 0 0 2.5px #fdfdfd;
+    min-height: 90vh;
+    padding-top: 30px;
+    padding-bottom: 30px; }
+    body main .brand_ID {
+      justify-content: center;
+      align-items: center; }
+      body main .brand_ID .persuu {
+        width: 55px;
+        margin-right: 10px; }
+        body main .brand_ID .persuu .icon {
+          position: relative;
+          font-family: "Font Awesome 6 Free";
+          line-height: 40px;
+          display: flex;
+          align-items: center; }
+          body main .brand_ID .persuu .icon svg {
+            color: #fff; }
+            body main .brand_ID .persuu .icon svg.fa-heart {
+              font-size: 28px;
+              margin-left: 7px;
+              z-index: 2; }
+            body main .brand_ID .persuu .icon svg.fa-caret-left {
+              font-size: 42px;
+              position: absolute;
+              right: -2.5px;
+              color: #c8a2c8; }
+          body main .brand_ID .persuu .icon::before {
+            content: "";
+            width: 42px;
+            height: 40px;
+            border-radius: 10px;
+            position: absolute;
+            z-index: 0;
+            background-color: #c8a2c8; }
+      body main .brand_ID span#name {
+        font-weight: 700;
+        font-size: 28px;
+        font-family: DM-Regular;
+        color: #fdfdfd;
+        text-shadow: 0 0 2.5px #c8a2c8; }
+    body main .intro {
+      font-family: Merriweather-Italic; }
+  body.recreational {
+    background-image: linear-gradient(to bottom right, #d77fa180, #baabda80, #d6e5fa80, #baabda80, #d77fa180); }
+    body.recreational main {
+      background-image: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1); }
+      body.recreational main .persuu .icon svg.fa-caret-left {
+        color: #D77FA1; }
+      body.recreational main .persuu .icon::before {
+        background-color: #D77FA1; }
+      body.recreational main span#name {
+        text-shadow: 0 0 2.5px #D77FA1; }
+
+button {
+  width: 180px;
+  color: #fdfdfd;
+  background-color: #c8a2c8;
+  border-color: #c8a2c8;
+  border-radius: 5px;
+  line-height: 35px; }
+  button a, button a:hover {
+    text-decoration: none;
+    display: block;
+    color: #fdfdfd; }
+
+button:hover, button:focus-within {
+  border-style: inset;
+  background-color: #212121;
+  border-color: #212121; }
 
 /*# sourceMappingURL=main.css.map */
