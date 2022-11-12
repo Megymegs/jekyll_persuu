@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .recreational {
     #landing {
@@ -64,6 +65,45 @@
                 }
             }
             &#companion {
+=======
+#landing {
+    .text-content {
+        h4 {
+            font-size: calc(1.07rem + 0.3vw);
+        }
+    }
+    .acc_type {
+        .pl-0 {
+            padding-left: 0;
+            &#romance {
+                h4{
+                    svg {
+                        position: relative;
+                        &:nth-of-type(2) {
+                            left: -5px;
+                        }
+                    }
+                }
+                .icon {
+                    svg {
+                        animation-name: breathe_left;
+                    }
+                }
+            }
+            &#companion {
+                h4{
+                    svg {
+                        position: relative;
+                        &:nth-of-type(1) {
+                            transform: rotateZ(90deg);
+                        }
+                        &:nth-of-type(2) {
+                            color: #e6d6ff;
+                            margin: 0 5px;
+                        }
+                    }
+                }
+>>>>>>> a24f2bd24d4bee27e710a1fb23f8884282471cae
                 .icon {
                     svg {
                         animation-name: breathe_right;
@@ -76,18 +116,29 @@
                     font-size: 56px;
                     margin: 10px auto;
                     animation: 3s infinite ease-in-out;
+<<<<<<< HEAD
                     color: #fff;
                     opacity: 0.8;
+=======
+
+>>>>>>> a24f2bd24d4bee27e710a1fb23f8884282471cae
                     @keyframes breathe_left {
                         0% {
                             transform: scale(0.9);
                         }
                         50% {
                             transform: scale(1.09);
+<<<<<<< HEAD
                         }
                         100% {
                             transform: scale(0.9);
                         }
+=======
+                        }
+                        100% {
+                            transform: scale(0.9);
+                        }
+>>>>>>> a24f2bd24d4bee27e710a1fb23f8884282471cae
                     }
                     @keyframes breathe_right {
                         0% {
@@ -103,6 +154,7 @@
                 }
                 :hover {
                     color: #917bb5;
+<<<<<<< HEAD
                     opacity: 1;
                 }
             }
@@ -196,6 +248,23 @@
         .quote-source {
             font-size: calc(0.8rem + 0.8vw);
             font-family: DM-Italic;
+=======
+                }
+            }
+        }
+    }
+}
+.recreational {
+    #landing {
+        .acc_type {
+            .pl-0 {
+                .icon {
+                    :hover {
+                        color: #d77fa1;
+                    }
+                }
+            }
+>>>>>>> a24f2bd24d4bee27e710a1fb23f8884282471cae
         }
     }
 }
