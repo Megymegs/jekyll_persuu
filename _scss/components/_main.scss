@@ -18,77 +18,14 @@ body {
         background-image: $background-image-1-1;
         color: $primary-color;
         text-shadow: 0 0 2.5px $main-color;
-        min-height: 90vh;
+        min-height: 95vh;
         padding-top: 30px;
         padding-bottom: 30px;
-        .brand_ID {
-            justify-content: center;
-            align-items: center;
-            .persuu {
-                width: 55px;
-                margin-right: 10px;
-                .icon {
-                    position: relative;
-                    font-family: "Font Awesome 6 Free";
-                    line-height: 40px;
-                    display: flex;
-                    align-items: center;
-                    svg {
-                        color: #fff;
-                        &.fa-heart {
-                            font-size: 28px;
-                            margin-left: 7px;
-                            z-index: 2;
-                        }
-                        &.fa-caret-left {
-                            font-size: 42px;
-                            position: absolute;
-                            right: -2.5px;
-                            color: $secondary-color;
-                        }
-                    }
-                    &::before {
-                        content: "";
-                        width: 42px;
-                        height: 40px;
-                        border-radius: 10px;
-                        position: absolute;
-                        z-index: 0;
-                        background-color: $secondary-color;
-                    }
-                }
-            }
-            span#name {
-                font-weight: 700;
-                font-size: 28px;
-                font-family: DM-Regular;
-                color: $main-color;
-                text-shadow: 0 0 2.5px #c8a2c8;
-            }
-        }
-        .intro {
-            font-family: Merriweather-Italic;
-        }
     }
     &.recreational {
         background-image: $background-image-2;
         main {
             background-image: $background-image-2-1;
-            .persuu {
-                .icon {
-                    svg {
-                        &.fa-caret-left {
-                            color: $color-two;
-                        }
-                    }
-                    &::before {
-                        background-color: $color-two;
-                    }
-                }
-            }
-            span#name {
-                text-shadow: 0 0 2.5px $color-two;
-            }
         }
     }
 }
@@ -99,11 +36,12 @@ button {
     background-color: $secondary-color;
     border-color: $secondary-color;
     border-radius: 5px;
-    line-height: 35px;
+    line-height: 40px;
     a, a:hover {
         text-decoration: none;
         display: block;
         color: $main-color;
+        font-size: clamp(16px, 50%, 24px);
     }
 }
 
@@ -111,4 +49,22 @@ button:hover, button:focus-within {
     border-style: inset;
     background-color: $primary-color;
     border-color: $primary-color;
+}
+
+@media (min-width: 768px) {
+    body {
+        main {
+            min-height: 100vh;
+        }
+
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        main {
+            min-height: 105vh;
+        }
+
+    }
 }

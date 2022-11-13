@@ -1,0 +1,26 @@
+.recreational {
+    #quote {
+        border-image-source: $background-image-1;
+        background-image: linear-gradient(to left, transparent, $secondary-color, transparent);
+    }
+}
+
+#quote {
+    max-width: 600px;
+    border: 3px solid;
+    border-width: 6px;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    border-image-slice: 1 0;
+    border-image-source: $background-image-2;
+    background-image: linear-gradient(to left, transparent, $background-1, transparent);
+    .quote-content span {
+        font-family: DM-Regular;
+        font-size: calc(1.2rem + 0.8vw);
+    }
+    .quote-source {
+        font-size: calc(0.8rem + 0.8vw);
+        font-family: DM-Italic;
+    }
+}

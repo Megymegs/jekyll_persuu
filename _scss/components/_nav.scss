@@ -1,34 +1,37 @@
-.navbar {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: 0;
-}
-
-#navbarNav .navbar-nav {
-    justify-content: space-evenly;
-}
-
-.navbar .navbar-toggler:before {
-    content: "\f0c9";
-    font-family: 'fontawesome';
-}
-
-.navbar .navbar-brand {
-    margin-right: 0;
-}
-
-#navbarNav .navbar-nav a {
-    color: $color-one;
-    font-family: 'Montserrat-Medium';
-    font-size: 0.85em;
-}
-
-.navbar-toggler {
-    position: relative;
-}
-
-.navbar .navbar-toggler:before {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+body {
+    main {
+        .brand_ID {
+            justify-content: center;
+            align-items: center;
+            a {
+                text-decoration: none;
+                .persuu {
+                    width: 55px;
+                    margin-right: 10px;
+                    img {
+                        max-width: 60px;
+                    }
+                }
+                span#name {
+                    font-weight: 700;
+                    font-size: 28px;
+                    font-family: DM-Regular;
+                    color: $main-color;
+                    text-shadow: 0 0 2.5px $secondary-color;
+                }
+            }
+        }
+        .intro {
+            font-family: Merriweather-Italic;
+        }
+    }
+    &.recreational {
+        .brand_ID {
+            a {
+                span#name {
+                    text-shadow: 0 0 2.5px $color-two;
+                }
+            }
+        }
+    }
 }
