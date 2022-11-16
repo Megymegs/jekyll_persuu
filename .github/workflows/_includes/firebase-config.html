@@ -1,9 +1,9 @@
-<script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/3.2.0/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-app.js"></script>
 
 <script src="https://www.gstatic.com/firebasejs/6.0.1/firebase-auth.js"></script>
 
-<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script> -->
 
 
 <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
@@ -30,7 +30,7 @@
   // FirebaseUI config.
   var uiConfig = {
     callbacks: {
-      signInSuccessWithAuthResult: function(authResult, redirectUrl="https://megymegs.github.io/jekyll_persuu/dashboard.html") {
+      signInSuccessWithAuthResult: function(authResult, redirectUrl) {
         // User successfully signed in.
         // Return type determines whether we continue the redirect automatically
         // or whether we leave that to developer to handle.
@@ -39,7 +39,7 @@
       uiShown: function() {
         // The widget is rendered.
         // Hide the loader.
-        // document.getElementById('loader').style.display = 'none';
+        document.getElementById('loader').style.display = 'none';
       }
     },
     
