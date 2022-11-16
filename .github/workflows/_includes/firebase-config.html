@@ -20,10 +20,11 @@
 <script src="https://www.gstatic.com/firebasejs/ui/live/0.4/firebase-ui-auth.js"></script>
 
 <script type="text/javascript">
+  // var redirectUrl = "https://megymegs.github.io/jekyll_persuu/dashboard.html"
   // FirebaseUI config.
   var uiConfig = {
     callbacks: {
-      signInSuccessWithAuthResult: function(authResult, redirectUrl) {
+      signInSuccessWithAuthResult: function(authResult, redirectUrl="https://megymegs.github.io/jekyll_persuu/dashboard.html") {
         // User successfully signed in.
         // Return type determines whether we continue the redirect automatically
         // or whether we leave that to developer to handle.
@@ -32,7 +33,7 @@
       uiShown: function() {
         // The widget is rendered.
         // Hide the loader.
-        document.getElementById('loader').style.display = 'none';
+        // document.getElementById('loader').style.display = 'none';
       }
     },
     
