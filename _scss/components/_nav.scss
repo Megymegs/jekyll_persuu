@@ -25,13 +25,4 @@ body {
             font-family: Merriweather-Italic;
         }
     }
-    &.recreational {
-        .brand_ID {
-            a {
-                span#name {
-                    text-shadow: 0 0 2.5px $color-two;
-                }
-            }
-        }
-    }
 }

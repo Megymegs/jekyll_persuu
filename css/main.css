@@ -40,16 +40,11 @@ body main .brand_ID {
       text-shadow: 0 0 2.5px #c8a2c8; }
 body main .intro {
   font-family: Merriweather-Italic; }
-body.recreational .brand_ID a span#name {
-  text-shadow: 0 0 2.5px #D77FA1; }
 
 .recreational #landing .acc_type .col-6#companion h4 svg:nth-of-type(2) {
   color: #d77fa1; }
 .recreational #landing .acc_type .col-6 .icon :hover {
   color: #d77fa1; }
-.recreational #landing .member_type button {
-  background-color: #D77FA1;
-  border-color: #D77FA1; }
 
 #landing .text-content {
   text-decoration: none;
@@ -144,7 +139,7 @@ body.recreational .brand_ID a span#name {
   border-color: #212121; }
 
 body {
-  background-image: linear-gradient(to bottom right, #d2afff80, #e6d7ff80, #c8a2c880, #e6d7ff80, #d2afff80);
+  background-image: linear-gradient(to bottom right, #d77fa180, #baabda80, #d6e5fa80, #baabda80, #d77fa180);
   font-family: Merriweather-Regular; }
   body p, body span, body button, body a {
     font-size: clamp(14px, 50%, 21px); }
@@ -157,16 +152,12 @@ body {
     border-radius: 5px;
     max-width: calc(100% - 30px);
     margin: 40px auto;
-    background-image: linear-gradient(to bottom right, #d2afff, #e6d7ff, #C8A2C8, #e6d7ff, #d2afff);
+    background-image: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1);
     color: #212121;
     text-shadow: 0 0 2.5px #fdfdfd;
     min-height: 95vh;
     padding-top: 30px;
     padding-bottom: 30px; }
-  body.recreational {
-    background-image: linear-gradient(to bottom right, #d77fa180, #baabda80, #d6e5fa80, #baabda80, #d77fa180); }
-    body.recreational main {
-      background-image: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1); }
 
 button {
   width: 180px;
@@ -192,8 +183,14 @@ button:hover, button:focus-within {
 @media (min-width: 1024px) {
   body main {
     min-height: 105vh; } }
+li.firebaseui-list-item button {
+  display: flex;
+  margin: 0 auto 10px;
+  align-items: center;
+  justify-content: center; }
+
 .recreational #quote {
-  border-image-source: linear-gradient(to bottom right, #d2afff80, #e6d7ff80, #c8a2c880, #e6d7ff80, #d2afff80);
+  border-image-source: linear-gradient(to bottom right, #d77fa180, #baabda80, #d6e5fa80, #baabda80, #d77fa180);
   background-image: linear-gradient(to left, transparent, #c8a2c8, transparent); }
 
 #quote {
@@ -205,7 +202,7 @@ button:hover, button:focus-within {
   width: 100%;
   border-image-slice: 1 0;
   border-image-source: linear-gradient(to bottom right, #d77fa180, #baabda80, #d6e5fa80, #baabda80, #d77fa180);
-  background-image: linear-gradient(to left, transparent, #a3d5e947, transparent); }
+  background-image: linear-gradient(to left, transparent, #c8a2c859, transparent); }
   #quote .quote-content span {
     font-family: DM-Regular;
     font-size: calc(1.2rem + 0.8vw); }

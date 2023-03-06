@@ -11,14 +11,12 @@ $grid-breakpoints: (
 $main-color: #fdfdfd;
 $primary-color: #212121;
 $secondary-color: #c8a2c8;
-$color-one: #d6e4f9;
-$color-two: #D77FA1;
-$background-1: unquote('#a3d5e947');
-$background-2: unquote('#c8a2c859');
-$background-image-1: linear-gradient(to bottom right, unquote('#d2afff80'), unquote('#e6d7ff80'), unquote('#c8a2c880'), unquote('#e6d7ff80'), unquote('#d2afff80'));
-$background-image-1-1: linear-gradient(to bottom right, #d2afff, #e6d7ff, #C8A2C8, #e6d7ff, #d2afff);
-$background-image-2: linear-gradient(to bottom right, unquote('#d77fa180'), unquote('#baabda80'), unquote('#d6e5fa80'), unquote('#baabda80'), unquote('#d77fa180'));
-$background-image-2-1: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1);
+
+$color-one: #D77FA1;
+$background-1: #c8a2c859;
+$background-image-1: linear-gradient(to bottom right, #d77fa180, #baabda80, #d6e5fa80, #baabda80, #d77fa180);
+$background-image-1-1: linear-gradient(to bottom right, #D77FA1, #BAABDA, #D6E5FA, #BAABDA, #D77FA1);
+
 $base-color: $primary-color;
 
 // Transitions
